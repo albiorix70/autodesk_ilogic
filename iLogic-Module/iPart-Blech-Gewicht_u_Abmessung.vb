@@ -73,8 +73,10 @@ Private Sub AbwicklungDimBerechnen(Optional pProgessInStatus As Boolean = True)
 				UnitsTypeEnum.kDatabaseLengthUnits, UnitsTypeEnum.kMillimeterLengthUnits), 1)
 
 		' Aufrunden auf den nächsten mm nach oben
-		dLength = Ceil(dLength)
-		dWidth = Ceil(dWidth)
+		' falls die Länge z.B. 123,01 mm ist, soll es auf 124 mm aufgerundet werden
+		' ggf. kommentieren entfernen, wenn gewünscht	
+		' dLength = Ceil(dLength)
+		' dWidth = Ceil(dWidth)
 		
 		SetColumnValue(oPartFac.DefaultRow, "Gewicht", UoM.GetStringFromValue( dWeight, UoM.MassUnits))
 		SetColumnValue(oPartFac.DefaultRow, "Gewicht Abwicklung", UoM.GetStringFromValue( dFlatWeight, UoM.MassUnits))

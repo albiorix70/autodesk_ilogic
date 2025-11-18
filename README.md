@@ -16,4 +16,4 @@ In diesem Optionsdialog das Verzeichnis, in dem sich diese einzelnen Module gefi
 
 ![Ausicht der Einstellungen in diesem Optionsdialog, unter anderem die Verzeichnisse, die Standard-Erweiterungen und die Protokoll-Ebene](docs/pic2.png)
 
-Zusätzlich sollte die Standard-Erweiterung der RegelDateien von **.iLogicVB** auf **.vb** geändert werden. Diese Änderung veranlasst die iLogic-Engine dazu, den erweiterten .NET-Befehlssatz für diese Dateien zu verwenden.
+Zusätzlich sollte die Standard-Erweiterung der RegelDateien von **.iLogicVB** auf **.vb** geändert werden. Diese Änderung veranlasst die iLogic-Engine dazu, den erweiterten .NET-Befehlssatz für diese Dateien zu verwenden. Ohne diese Einstellungen können die Spalten in der Parameter-Tabelle nicht automatisch angelegt werden.
